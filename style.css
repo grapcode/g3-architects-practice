@@ -77,8 +77,8 @@ header {
 .banner {
     max-width: 1400px;
     margin: 0 auto;
-    margin-top: 60px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .banner-container {
@@ -205,8 +205,11 @@ footer{
 @media screen and (max-width: 576px) {
 
     .navbar,
-    .navbar ul,
-    .quick-features {
+    .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .quick-features{
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -239,12 +242,15 @@ footer{
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
     .navbar,
-    .navbar ul,
-    .quick-features {
+    .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .quick-features{
         flex-direction: column-reverse;
         text-align: center;
     }
-
+    
     .features-enjoy {
         flex-direction: column;
         margin: 0 30px;
