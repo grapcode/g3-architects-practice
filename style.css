@@ -1,0 +1,266 @@
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared styles */
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.primary-btn {
+    background-color: #ff900e;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: #fff;
+    margin: 20px 0;
+}
+
+p {
+    color: #727272;
+    margin: 10px 0;
+    line-height: 22px;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.common-h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* navbar styles */
+header {
+    background-color: #fff4e7;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.navbar h3 {
+    font-size: 2.8rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* banner styles */
+.banner {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.banner-container {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+.banner-container h1 {
+    font-size: 4rem;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* quick-features styles */
+.quick-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qf-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.qf-container {
+    margin-left: 60px;
+}
+
+.qf-container .h3-medium {
+    font-weight: 300;
+    color: #666666;
+}
+
+.qf-container .color-text {
+    color: #ff900e;
+}
+
+/* features enjoy styles  */
+.features-enjoy {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.enjoy-container h3 {
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.enjoy-card {
+    max-width: 750px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin: 20px 0;
+}
+
+.enjoy-card h5 {
+    font-size: 1.25rem;
+}
+
+.enjoy-img img {
+    width: 100%;
+}
+
+.enjoy-img button {
+    margin-left: -60px;
+    margin-top: -80px;
+}
+
+.enjoy-img .year-10 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.enjoy-img button p {
+    font-size: 1rem;
+    color: #fff;
+}
+/* some facts style  */
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    margin-top: 40px;
+}
+.fact-card{
+    border: 1px solid #ff900e;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    align-content: center;
+}
+.fact-card h5{
+    font-size: 2.8rem;
+}
+/* sponsor styles */
+.sponsor{
+    text-align: center;
+}
+.sponsor-grup{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    filter: grayscale(100%);
+    gap: 40px;
+}
+/* footer styles  */
+footer{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff4e7;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* responsive for mobile  */
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .navbar ul,
+    .quick-features {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .qf-img, 
+    .fact-container, 
+    .sponsor-grup {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .qf-container {
+        margin: 30px 0;
+    }
+
+    .features-enjoy {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .enjoy-img button, .some-facts {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+}
+
+
+/* responsive for tablet  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .navbar,
+    .navbar ul,
+    .quick-features {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .features-enjoy {
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .enjoy-img button, .some-facts {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .enjoy-card {
+        max-width: 100%;
+        
+    }
+    .fact-container, .sponsor-grup{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
